@@ -1,4 +1,11 @@
-/* Det här exemplet visar hur roboten knuffar på motståndaren utan att trilla av planen */
+/* license:BSD-3-Clause
+   copyright:Joakim Larsson Edstrom
+
+     Knuffa2
+
+   Det här exemplet visar hur roboten knuffar på motståndaren utan att trilla av planen
+   Ny feature: Använd linjesensorerna för att undvika köra av planen
+*/
 #include <Wire.h>
 #include <Zumo32U4.h>
 
@@ -32,7 +39,7 @@ enum {
 void setup()
 {
   avstandsSensorer.initThreeSensors();          // Det finns 3 avstånsdsensorer
-    linjeSensorer.initFiveSensors();
+  linjeSensorer.initFiveSensors();
   while (!buttonA.getSingleDebouncedPress()); // Vänta på att knappen A ska tryckas
   delay(1000);
 }

@@ -1,4 +1,11 @@
-/* Det här exemplet visar hur roboten knuffar på motståndaren utan att trilla av planen */
+/* license:BSD-3-Clause
+   copyright:Joakim Larsson Edstrom
+
+     Knuffa3
+
+   Det här exemplet visar hur roboten knuffar på motståndaren utan att trilla av planen
+   Ny feature: Knuffar bara till linjen och trillar inte av planen
+*/
 #include <Wire.h>
 #include <Zumo32U4.h>
 

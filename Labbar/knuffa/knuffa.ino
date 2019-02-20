@@ -1,5 +1,12 @@
-/* Det här exemplet visar hur avståndssensorerna används  för att bestämma 
-   vilket håll roboten ska vrida sig */
+/* license:BSD-3-Clause
+     copyright:Joakim Larsson Edstrom
+
+     Knuffa
+
+   Det här exemplet visar hur avståndssensorerna används  för att bestämma
+   vilket håll roboten ska vrida sig och knuffar på motståndaren när denne 
+   hittas
+*/
 #include <Wire.h>
 #include <Zumo32U4.h>
 
@@ -23,13 +30,13 @@ void setup()
 void loop()
 {
   uint16_t avstandsSensorVarden[4];
-  
+
   avstandsSensorer.read();   // Läs avståndssensorerna.
   avstandsSensorVarden[FV] = avstandsSensorer.countsFrontWithLeftLeds();
   avstandsSensorVarden[FH] = avstandsSensorer.countsFrontWithRightLeds();
 
   // Om ljuset från höger syns mer än ljuset till vänster
-  if (avstandsSensorVarden[FV] - avstandsSensorVarden[FH] > 2) 
+  if (avstandsSensorVarden[FV] - avstandsSensorVarden[FH] > 2)
   {
     larver.setLeftSpeed(200); // Snurra höger
     larver.setRightSpeed(-200);
@@ -49,7 +56,7 @@ void loop()
   else
   {
     // Stå still!
-    larver.setLeftSpeed(0); 
+    larver.setLeftSpeed(0);
     larver.setRightSpeed(0);
   }
   delay(10); // Vänta 1/100 sekund = 10mS

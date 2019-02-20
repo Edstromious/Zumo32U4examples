@@ -1,4 +1,11 @@
-/* Det här exemplet visar hur roboten knuffar på motståndaren utan att trilla av planen */
+/* license:BSD-3-Clause
+     copyright:Joakim Larsson Edstrom
+
+     Knuffa6
+
+     Det här exemplet visar hur roboten knuffar på motståndaren utan att trilla av planen
+     Ny feature: Slump
+*/
 #include <Wire.h>
 #include <Zumo32U4.h>
 
