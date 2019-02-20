@@ -1,4 +1,11 @@
-/* Det här exemplet visar hur man blinkar med lysdioderna på Zumo 32U4. */
+/* license:BSD-3-Clause
+   copyright:Joakim Larsson Edstrom
+
+   Blinka
+
+   Det här exemplet visar hur man blinkar med lysdioderna på Zumo 32U4.
+
+*/
 
 #include <Wire.h>
 #include <Zumo32U4.h>

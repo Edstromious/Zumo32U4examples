@@ -1,4 +1,10 @@
-/* Det här exemplet visar hur man skriver på displayen */
+/* license:BSD-3-Clause
+ * copyright:Joakim Larsson Edstrom
+ *  
+ * Display
+ *
+ * Det här exemplet visar hur man skriver på displayen 
+ */
 
 #include <Wire.h>
 #include <Zumo32U4.h>

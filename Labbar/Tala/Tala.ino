@@ -1,5 +1,9 @@
-/* 
- *  Det här exemplet visar hur man spelar enkla toner på Zumo 32U4
+/* license:BSD-3-Clause
+ * copyright:Joakim Larsson Edstrom
+ *  
+ * Tala
+ *
+ * Det här exemplet visar hur man spelar enkla toner på Zumo 32U4
  */
 
 #include <Wire.h>

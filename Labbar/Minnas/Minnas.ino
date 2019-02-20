@@ -1,12 +1,17 @@
-/*  Det här exemplet visar hur man lagrar data 
- *  i minnet och sedan plockar fram det och 
- *  skriver det på displayen. */
+/* license:BSD-3-Clause
+ * copyright:Joakim Larsson Edstrom
+ *  
+ * Minnas
+ *
+ * Det här exemplet visar hur man lagrar data 
+ * i minnet och sedan plockar fram det och 
+ * skriver det på displayen. 
+ */
 #include <EEPROM.h>
 #include <Wire.h>
 #include <Zumo32U4.h>
 
 Zumo32U4LCD fisk;
-
 
 // Körs en gång vid start av Zumo
 void setup() { 
@@ -32,5 +37,4 @@ void loop() {
 
   delay(1000);
 }
-
 
